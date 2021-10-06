@@ -7,29 +7,190 @@ package com.facebank.clients;
 @javax.persistence.Entity
 public class PersonalData implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    @javax.persistence.GeneratedValue(generator = "PERSONALDATA_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
-    @javax.persistence.Id
-    @javax.persistence.SequenceGenerator(sequenceName = "PERSONALDATA_ID_SEQ", name = "PERSONALDATA_ID_GENERATOR")
-    private java.lang.Long id;
+	@javax.persistence.GeneratedValue(generator = "PERSONALDATA_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
+	@javax.persistence.Id
+	@javax.persistence.SequenceGenerator(sequenceName = "PERSONALDATA_ID_SEQ", name = "PERSONALDATA_ID_GENERATOR")
+	private java.lang.Long id;
 
-    public PersonalData() {
-    }
-    
-    public PersonalData(java.lang.Long id) {
-        this.id = id;
-    }
+	private java.lang.String surname;
 
-    public java.lang.Long getId() {
-        return this.id;
-    }
-    
-    public void setId(java.lang.Long id) {
-        this.id = id;
-    }
+	private java.lang.String secondSurname;
 
+	private java.lang.String gender;
 
+	private java.lang.String birthDate;
 
+	private java.lang.String birthPlace;
+
+	private java.lang.Integer nationality;
+
+	private java.lang.String document;
+
+	private java.lang.String passport;
+
+	private java.lang.String passportExpirationDate;
+
+	private java.lang.String completeNames;
+
+	private java.lang.String documentType;
+
+	private java.lang.String documentEmissionDate;
+
+	private java.lang.String documentExpirationDate;
+
+	private java.lang.String passportEmissionDate;
+
+	public PersonalData() {
+	}
+
+	public java.lang.Long getId() {
+		return this.id;
+	}
+
+	public void setId(java.lang.Long id) {
+		this.id = id;
+	}
+
+	public java.lang.String getSurname() {
+		return this.surname;
+	}
+
+	public void setSurname(java.lang.String surname) {
+		this.surname = surname;
+	}
+
+	public java.lang.String getSecondSurname() {
+		return this.secondSurname;
+	}
+
+	public void setSecondSurname(java.lang.String secondSurname) {
+		this.secondSurname = secondSurname;
+	}
+
+	public java.lang.String getGender() {
+		return this.gender;
+	}
+
+	public void setGender(java.lang.String gender) {
+		this.gender = gender;
+	}
+
+	public java.lang.String getBirthDate() {
+		return this.birthDate;
+	}
+
+	public void setBirthDate(java.lang.String birthDate) {
+		this.birthDate = birthDate;
+	}
+
+	public java.lang.String getBirthPlace() {
+		return this.birthPlace;
+	}
+
+	public void setBirthPlace(java.lang.String birthPlace) {
+		this.birthPlace = birthPlace;
+	}
+
+	public java.lang.Integer getNationality() {
+		return this.nationality;
+	}
+
+	public void setNationality(java.lang.Integer nationality) {
+		this.nationality = nationality;
+	}
+
+	public java.lang.String getDocument() {
+		return this.document;
+	}
+
+	public void setDocument(java.lang.String document) {
+		this.document = document;
+	}
+
+	public java.lang.String getPassport() {
+		return this.passport;
+	}
+
+	public void setPassport(java.lang.String passport) {
+		this.passport = passport;
+	}
+
+	public java.lang.String getPassportExpirationDate() {
+		return this.passportExpirationDate;
+	}
+
+	public void setPassportExpirationDate(
+			java.lang.String passportExpirationDate) {
+		this.passportExpirationDate = passportExpirationDate;
+	}
+
+	public java.lang.String getCompleteNames() {
+		return this.completeNames;
+	}
+
+	public void setCompleteNames(java.lang.String completeNames) {
+		this.completeNames = completeNames;
+	}
+
+	public java.lang.String getDocumentType() {
+		return this.documentType;
+	}
+
+	public void setDocumentType(java.lang.String documentType) {
+		this.documentType = documentType;
+	}
+
+	public java.lang.String getDocumentEmissionDate() {
+		return this.documentEmissionDate;
+	}
+
+	public void setDocumentEmissionDate(java.lang.String documentEmissionDate) {
+		this.documentEmissionDate = documentEmissionDate;
+	}
+
+	public java.lang.String getDocumentExpirationDate() {
+		return this.documentExpirationDate;
+	}
+
+	public void setDocumentExpirationDate(
+			java.lang.String documentExpirationDate) {
+		this.documentExpirationDate = documentExpirationDate;
+	}
+
+	public java.lang.String getPassportEmissionDate() {
+		return this.passportEmissionDate;
+	}
+
+	public void setPassportEmissionDate(java.lang.String passportEmissionDate) {
+		this.passportEmissionDate = passportEmissionDate;
+	}
+
+	public PersonalData(java.lang.Long id, java.lang.String surname,
+			java.lang.String secondSurname, java.lang.String gender,
+			java.lang.String birthDate, java.lang.String birthPlace,
+			java.lang.Integer nationality, java.lang.String document,
+			java.lang.String passport, java.lang.String passportExpirationDate,
+			java.lang.String completeNames, java.lang.String documentType,
+			java.lang.String documentEmissionDate,
+			java.lang.String documentExpirationDate,
+			java.lang.String passportEmissionDate) {
+		this.id = id;
+		this.surname = surname;
+		this.secondSurname = secondSurname;
+		this.gender = gender;
+		this.birthDate = birthDate;
+		this.birthPlace = birthPlace;
+		this.nationality = nationality;
+		this.document = document;
+		this.passport = passport;
+		this.passportExpirationDate = passportExpirationDate;
+		this.completeNames = completeNames;
+		this.documentType = documentType;
+		this.documentEmissionDate = documentEmissionDate;
+		this.documentExpirationDate = documentExpirationDate;
+		this.passportEmissionDate = passportEmissionDate;
+	}
 
 }
