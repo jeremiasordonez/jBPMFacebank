@@ -7,29 +7,187 @@ package com.facebank.clients;
 @javax.persistence.Entity
 public class AddressData implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    @javax.persistence.GeneratedValue(generator = "ADDRESSDATA_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
-    @javax.persistence.Id
-    @javax.persistence.SequenceGenerator(sequenceName = "ADDRESSDATA_ID_SEQ", name = "ADDRESSDATA_ID_GENERATOR")
-    private java.lang.Long id;
+	@javax.persistence.GeneratedValue(generator = "ADDRESSDATA_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
+	@javax.persistence.Id
+	@javax.persistence.SequenceGenerator(sequenceName = "ADDRESSDATA_ID_SEQ", name = "ADDRESSDATA_ID_GENERATOR")
+	private java.lang.Long id;
 
-    public AddressData() {
-    }
-    
-    public AddressData(java.lang.Long id) {
-        this.id = id;
-    }
+	private java.lang.String addressType;
 
-    public java.lang.Long getId() {
-        return this.id;
-    }
-    
-    public void setId(java.lang.Long id) {
-        this.id = id;
-    }
+	private java.lang.String address;
 
+	private java.lang.Integer country;
 
+	private java.lang.Integer province;
 
+	private java.lang.Integer city;
+
+	private java.lang.Integer postalCode;
+
+	private java.lang.String personalPhoneNumber;
+
+	private java.lang.Integer workCountry;
+
+	private java.lang.Integer workProvince;
+
+	private java.lang.Integer workCity;
+
+	private java.lang.Integer workPostalCode;
+
+	private java.lang.String workAddressType;
+
+	private java.lang.String workAddress;
+
+	private java.lang.String workPhoneNumber;
+
+	public AddressData() {
+	}
+
+	public java.lang.Long getId() {
+		return this.id;
+	}
+
+	public void setId(java.lang.Long id) {
+		this.id = id;
+	}
+
+	public java.lang.String getAddressType() {
+		return this.addressType;
+	}
+
+	public void setAddressType(java.lang.String addressType) {
+		this.addressType = addressType;
+	}
+
+	public java.lang.String getAddress() {
+		return this.address;
+	}
+
+	public void setAddress(java.lang.String address) {
+		this.address = address;
+	}
+
+	public java.lang.Integer getCountry() {
+		return this.country;
+	}
+
+	public void setCountry(java.lang.Integer country) {
+		this.country = country;
+	}
+
+	public java.lang.Integer getProvince() {
+		return this.province;
+	}
+
+	public void setProvince(java.lang.Integer province) {
+		this.province = province;
+	}
+
+	public java.lang.Integer getCity() {
+		return this.city;
+	}
+
+	public void setCity(java.lang.Integer city) {
+		this.city = city;
+	}
+
+	public java.lang.Integer getPostalCode() {
+		return this.postalCode;
+	}
+
+	public void setPostalCode(java.lang.Integer postalCode) {
+		this.postalCode = postalCode;
+	}
+
+	public java.lang.String getPersonalPhoneNumber() {
+		return this.personalPhoneNumber;
+	}
+
+	public void setPersonalPhoneNumber(java.lang.String personalPhoneNumber) {
+		this.personalPhoneNumber = personalPhoneNumber;
+	}
+
+	public java.lang.Integer getWorkCountry() {
+		return this.workCountry;
+	}
+
+	public void setWorkCountry(java.lang.Integer workCountry) {
+		this.workCountry = workCountry;
+	}
+
+	public java.lang.Integer getWorkProvince() {
+		return this.workProvince;
+	}
+
+	public void setWorkProvince(java.lang.Integer workProvince) {
+		this.workProvince = workProvince;
+	}
+
+	public java.lang.Integer getWorkCity() {
+		return this.workCity;
+	}
+
+	public void setWorkCity(java.lang.Integer workCity) {
+		this.workCity = workCity;
+	}
+
+	public java.lang.Integer getWorkPostalCode() {
+		return this.workPostalCode;
+	}
+
+	public void setWorkPostalCode(java.lang.Integer workPostalCode) {
+		this.workPostalCode = workPostalCode;
+	}
+
+	public java.lang.String getWorkAddressType() {
+		return this.workAddressType;
+	}
+
+	public void setWorkAddressType(java.lang.String workAddressType) {
+		this.workAddressType = workAddressType;
+	}
+
+	public java.lang.String getWorkAddress() {
+		return this.workAddress;
+	}
+
+	public void setWorkAddress(java.lang.String workAddress) {
+		this.workAddress = workAddress;
+	}
+
+	public java.lang.String getWorkPhoneNumber() {
+		return this.workPhoneNumber;
+	}
+
+	public void setWorkPhoneNumber(java.lang.String workPhoneNumber) {
+		this.workPhoneNumber = workPhoneNumber;
+	}
+
+	public AddressData(java.lang.Long id, java.lang.String addressType,
+			java.lang.String address, java.lang.Integer country,
+			java.lang.Integer province, java.lang.Integer city,
+			java.lang.Integer postalCode, java.lang.String personalPhoneNumber,
+			java.lang.Integer workCountry, java.lang.Integer workProvince,
+			java.lang.Integer workCity, java.lang.Integer workPostalCode,
+			java.lang.String workAddressType, java.lang.String workAddress,
+			java.lang.String workPhoneNumber) {
+		this.id = id;
+		this.addressType = addressType;
+		this.address = address;
+		this.country = country;
+		this.province = province;
+		this.city = city;
+		this.postalCode = postalCode;
+		this.personalPhoneNumber = personalPhoneNumber;
+		this.workCountry = workCountry;
+		this.workProvince = workProvince;
+		this.workCity = workCity;
+		this.workPostalCode = workPostalCode;
+		this.workAddressType = workAddressType;
+		this.workAddress = workAddress;
+		this.workPhoneNumber = workPhoneNumber;
+	}
 
 }
