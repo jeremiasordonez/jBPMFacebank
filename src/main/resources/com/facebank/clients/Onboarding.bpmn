@@ -1,10 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:drools="http://www.jboss.org/drools" id="_Aaj2gCaxEeyh0IFhxwWhlg" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
-  <bpmn2:process id="Clients.Onboarding" drools:packageName="com.facebank.clients" drools:version="1.0" drools:adHoc="false" name="Onboarding" isExecutable="true" processType="Public"/>
-  <bpmndi:BPMNDiagram id="_Aaj2gSaxEeyh0IFhxwWhlg">
-    <bpmndi:BPMNPlane id="_Aaj2giaxEeyh0IFhxwWhlg" bpmnElement="Clients.Onboarding"/>
+<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:drools="http://www.jboss.org/drools" id="_MlFSoCaxEeyh0IFhxwWhlg" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
+  <bpmn2:itemDefinition id="_initialDataItem" structureRef="com.facebank.clients.InitialData"/>
+  <bpmn2:itemDefinition id="_personalDataItem" structureRef="com.facebank.clients.PersonalData"/>
+  <bpmn2:itemDefinition id="_addressDataItem" structureRef="com.facebank.clients.AddressData"/>
+  <bpmn2:itemDefinition id="_advancedDataItem" structureRef="com.facebank.clients.AdvancedData"/>
+  <bpmn2:itemDefinition id="_validItem" structureRef="Boolean"/>
+  <bpmn2:itemDefinition id="_resultItem" structureRef="Object"/>
+  <bpmn2:process id="Clients.Onboarding" drools:packageName="com.facebank.clients" drools:version="1.0" drools:adHoc="false" name="Onboarding" isExecutable="true" processType="Public">
+    <bpmn2:property id="initialData" itemSubjectRef="_initialDataItem" name="initialData"/>
+    <bpmn2:property id="personalData" itemSubjectRef="_personalDataItem" name="personalData"/>
+    <bpmn2:property id="addressData" itemSubjectRef="_addressDataItem" name="addressData"/>
+    <bpmn2:property id="advancedData" itemSubjectRef="_advancedDataItem" name="advancedData"/>
+    <bpmn2:property id="valid" itemSubjectRef="_validItem" name="valid"/>
+    <bpmn2:property id="result" itemSubjectRef="_resultItem" name="result"/>
+  </bpmn2:process>
+  <bpmndi:BPMNDiagram id="_MlF5sCaxEeyh0IFhxwWhlg">
+    <bpmndi:BPMNPlane id="_MlF5sSaxEeyh0IFhxwWhlg" bpmnElement="Clients.Onboarding"/>
   </bpmndi:BPMNDiagram>
-  <bpmn2:relationship id="_Aaj2gyaxEeyh0IFhxwWhlg" type="BPSimData">
+  <bpmn2:relationship id="_MlF5siaxEeyh0IFhxwWhlg" type="BPSimData">
     <bpmn2:extensionElements>
       <bpsim:BPSimData>
         <bpsim:Scenario xsi:type="bpsim:Scenario" id="default" name="Simulationscenario">
@@ -12,7 +25,7 @@
         </bpsim:Scenario>
       </bpsim:BPSimData>
     </bpmn2:extensionElements>
-    <bpmn2:source>_Aaj2gCaxEeyh0IFhxwWhlg</bpmn2:source>
-    <bpmn2:target>_Aaj2gCaxEeyh0IFhxwWhlg</bpmn2:target>
+    <bpmn2:source>_MlFSoCaxEeyh0IFhxwWhlg</bpmn2:source>
+    <bpmn2:target>_MlFSoCaxEeyh0IFhxwWhlg</bpmn2:target>
   </bpmn2:relationship>
 </bpmn2:definitions>
