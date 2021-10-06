@@ -7,29 +7,129 @@ package com.facebank.clients;
 @javax.persistence.Entity
 public class InitialData implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    @javax.persistence.GeneratedValue(generator = "INITIALDATA_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
-    @javax.persistence.Id
-    @javax.persistence.SequenceGenerator(sequenceName = "INITIALDATA_ID_SEQ", name = "INITIALDATA_ID_GENERATOR")
-    private java.lang.Long id;
+	@javax.persistence.GeneratedValue(generator = "INITIALDATA_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
+	@javax.persistence.Id
+	@javax.persistence.SequenceGenerator(sequenceName = "INITIALDATA_ID_SEQ", name = "INITIALDATA_ID_GENERATOR")
+	private java.lang.Long id;
 
-    public InitialData() {
-    }
-    
-    public InitialData(java.lang.Long id) {
-        this.id = id;
-    }
+	private java.lang.String login;
 
-    public java.lang.Long getId() {
-        return this.id;
-    }
-    
-    public void setId(java.lang.Long id) {
-        this.id = id;
-    }
+	private java.lang.String email;
 
+	private java.lang.String completeNames;
 
+	private java.lang.String firstSurname;
 
+	private java.lang.String secondSurname;
+
+	private java.lang.String currentUser;
+
+	private java.lang.String bdfName;
+
+	private java.lang.String bdfLoginName;
+
+	private java.lang.String bdfEmail;
+
+	public InitialData() {
+	}
+
+	public java.lang.Long getId() {
+		return this.id;
+	}
+
+	public void setId(java.lang.Long id) {
+		this.id = id;
+	}
+
+	public java.lang.String getLogin() {
+		return this.login;
+	}
+
+	public void setLogin(java.lang.String login) {
+		this.login = login;
+	}
+
+	public java.lang.String getEmail() {
+		return this.email;
+	}
+
+	public void setEmail(java.lang.String email) {
+		this.email = email;
+	}
+
+	public java.lang.String getCompleteNames() {
+		return this.completeNames;
+	}
+
+	public void setCompleteNames(java.lang.String completeNames) {
+		this.completeNames = completeNames;
+	}
+
+	public java.lang.String getFirstSurname() {
+		return this.firstSurname;
+	}
+
+	public void setFirstSurname(java.lang.String firstSurname) {
+		this.firstSurname = firstSurname;
+	}
+
+	public java.lang.String getSecondSurname() {
+		return this.secondSurname;
+	}
+
+	public void setSecondSurname(java.lang.String secondSurname) {
+		this.secondSurname = secondSurname;
+	}
+
+	public java.lang.String getCurrentUser() {
+		return this.currentUser;
+	}
+
+	public void setCurrentUser(java.lang.String currentUser) {
+		this.currentUser = currentUser;
+	}
+
+	public java.lang.String getBdfName() {
+		return this.bdfName;
+	}
+
+	public void setBdfName(java.lang.String bdfName) {
+		this.bdfName = bdfName;
+	}
+
+	public java.lang.String getBdfLoginName() {
+		return this.bdfLoginName;
+	}
+
+	public void setBdfLoginName(java.lang.String bdfLoginName) {
+		this.bdfLoginName = bdfLoginName;
+	}
+
+	public java.lang.String getBdfEmail() {
+		return this.bdfEmail;
+	}
+
+	public void setBdfEmail(java.lang.String bdfEmail) {
+		this.bdfEmail = bdfEmail;
+	}
+
+	public InitialData(java.lang.Long id, java.lang.String login,
+			java.lang.String email, java.lang.String completeNames,
+			java.lang.String firstSurname, java.lang.String secondSurname,
+			java.lang.String currentUser, java.lang.String bdfName,
+			java.lang.String bdfLoginName, java.lang.String bdfEmail) {
+		this.id = id;
+		this.login = login;
+		this.email = email;
+		this.completeNames = completeNames;
+		this.firstSurname = firstSurname;
+		this.secondSurname = secondSurname;
+		this.currentUser = currentUser;
+		this.bdfName = bdfName;
+		this.bdfLoginName = bdfLoginName;
+		this.bdfEmail = bdfEmail;
+	}
 
 }
