@@ -32,6 +32,10 @@ public class InitialData implements java.io.Serializable {
 
 	private java.lang.String bdfEmail;
 
+	private java.lang.String reasonRequest;
+
+	private java.lang.String products;
+
 	public InitialData() {
 	}
 
@@ -115,11 +119,28 @@ public class InitialData implements java.io.Serializable {
 		this.bdfEmail = bdfEmail;
 	}
 
+	public java.lang.String getReasonRequest() {
+		return this.reasonRequest;
+	}
+
+	public void setReasonRequest(java.lang.String reasonRequest) {
+		this.reasonRequest = reasonRequest;
+	}
+
+	public java.lang.String getProducts() {
+		return this.products;
+	}
+
+	public void setProducts(java.lang.String products) {
+		this.products = products;
+	}
+
 	public InitialData(java.lang.Long id, java.lang.String login,
 			java.lang.String email, java.lang.String completeNames,
 			java.lang.String firstSurname, java.lang.String secondSurname,
 			java.lang.String currentUser, java.lang.String bdfName,
-			java.lang.String bdfLoginName, java.lang.String bdfEmail) {
+			java.lang.String bdfLoginName, java.lang.String bdfEmail,
+			java.lang.String reasonRequest, java.lang.String products) {
 		this.id = id;
 		this.login = login;
 		this.email = email;
@@ -130,6 +151,8 @@ public class InitialData implements java.io.Serializable {
 		this.bdfName = bdfName;
 		this.bdfLoginName = bdfLoginName;
 		this.bdfEmail = bdfEmail;
+		this.reasonRequest = reasonRequest;
+		this.products = products;
 	}
 
 }
