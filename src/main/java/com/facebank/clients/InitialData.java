@@ -36,6 +36,8 @@ public class InitialData implements java.io.Serializable {
 
 	private java.lang.String products;
 
+	private java.lang.String tokenUW;
+
 	public InitialData() {
 	}
 
@@ -135,12 +137,21 @@ public class InitialData implements java.io.Serializable {
 		this.products = products;
 	}
 
+	public java.lang.String getTokenUW() {
+		return this.tokenUW;
+	}
+
+	public void setTokenUW(java.lang.String tokenUW) {
+		this.tokenUW = tokenUW;
+	}
+
 	public InitialData(java.lang.Long id, java.lang.String login,
 			java.lang.String email, java.lang.String completeNames,
 			java.lang.String firstSurname, java.lang.String secondSurname,
 			java.lang.String currentUser, java.lang.String bdfName,
 			java.lang.String bdfLoginName, java.lang.String bdfEmail,
-			java.lang.String reasonRequest, java.lang.String products) {
+			java.lang.String reasonRequest, java.lang.String products,
+			java.lang.String tokenUW) {
 		this.id = id;
 		this.login = login;
 		this.email = email;
@@ -153,6 +164,7 @@ public class InitialData implements java.io.Serializable {
 		this.bdfEmail = bdfEmail;
 		this.reasonRequest = reasonRequest;
 		this.products = products;
+		this.tokenUW = tokenUW;
 	}
 
 }
