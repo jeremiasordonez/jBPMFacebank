@@ -6,6 +6,7 @@ package com.facebank.clients;
 
 @javax.persistence.Entity
 @javax.persistence.Table(name = "PersonalData")
+@javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.IDENTITY)
 public class PersonalData implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
