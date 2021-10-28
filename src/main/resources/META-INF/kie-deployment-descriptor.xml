@@ -8,7 +8,7 @@
     <marshalling-strategies>
         <marshalling-strategy>
             <resolver>mvel</resolver>
-            <identifier>new org.drools.persistence.jpa.marshaller.JPAPlaceholderResolverStrategy("customer-service-jbpm-pu", classLoader)</identifier>
+            <identifier>new org.drools.persistence.jpa.marshaller.JPAPlaceholderResolverStrategy("facebank", classLoader)</identifier>
             <parameters/>
         </marshalling-strategy>
     </marshalling-strategies>
