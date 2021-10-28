@@ -5,6 +5,7 @@ package com.facebank.clients;
  */
 
 @javax.persistence.Entity
+@javax.persistence.Table(name = "PersonalData")
 public class PersonalData implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
