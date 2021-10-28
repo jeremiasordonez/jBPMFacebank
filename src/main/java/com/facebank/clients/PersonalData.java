@@ -11,7 +11,7 @@ public class PersonalData implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@javax.persistence.GeneratedValue(generator = "PERSONALDATA_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
+	@javax.persistence.GeneratedValue(generator = "PERSONALDATA_ID_GENERATOR", strategy = javax.persistence.GenerationType.IDENTITY)
 	@javax.persistence.Id
 	@javax.persistence.SequenceGenerator(sequenceName = "PERSONALDATA_ID_SEQ", name = "PERSONALDATA_ID_GENERATOR")
 	private java.lang.Long id;
