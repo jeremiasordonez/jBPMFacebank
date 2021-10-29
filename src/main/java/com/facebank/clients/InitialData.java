@@ -37,7 +37,8 @@ public class InitialData implements java.io.Serializable {
 
 	private java.lang.String products;
 
-	private int rolIds;
+	@javax.persistence.ElementCollection(fetch = javax.persistence.FetchType.EAGER)
+	private java.util.List<java.lang.Integer> rolIds;
 
 	public InitialData() {
 	}
@@ -138,11 +139,11 @@ public class InitialData implements java.io.Serializable {
 		this.products = products;
 	}
 
-	public int getRolIds() {
+	public java.util.List<java.lang.Integer> getRolIds() {
 		return this.rolIds;
 	}
 
-	public void setRolIds(int rolIds) {
+	public void setRolIds(java.util.List<java.lang.Integer> rolIds) {
 		this.rolIds = rolIds;
 	}
 
@@ -152,7 +153,7 @@ public class InitialData implements java.io.Serializable {
 			java.lang.String currentUser, java.lang.String bdfName,
 			java.lang.String bdfLoginName, java.lang.String bdfEmail,
 			java.lang.String reasonRequest, java.lang.String products,
-			int rolIds) {
+			java.util.List<java.lang.Integer> rolIds) {
 		this.id = id;
 		this.login = login;
 		this.email = email;
