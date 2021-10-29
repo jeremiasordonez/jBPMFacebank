@@ -37,7 +37,7 @@ public class InitialData implements java.io.Serializable {
 
 	private java.lang.String products;
 
-	private java.lang.String tokenUW;
+	private int rolIds;
 
 	public InitialData() {
 	}
@@ -138,12 +138,12 @@ public class InitialData implements java.io.Serializable {
 		this.products = products;
 	}
 
-	public java.lang.String getTokenUW() {
-		return this.tokenUW;
+	public int getRolIds() {
+		return this.rolIds;
 	}
 
-	public void setTokenUW(java.lang.String tokenUW) {
-		this.tokenUW = tokenUW;
+	public void setRolIds(int rolIds) {
+		this.rolIds = rolIds;
 	}
 
 	public InitialData(java.lang.Long id, java.lang.String login,
@@ -152,7 +152,7 @@ public class InitialData implements java.io.Serializable {
 			java.lang.String currentUser, java.lang.String bdfName,
 			java.lang.String bdfLoginName, java.lang.String bdfEmail,
 			java.lang.String reasonRequest, java.lang.String products,
-			java.lang.String tokenUW) {
+			int rolIds) {
 		this.id = id;
 		this.login = login;
 		this.email = email;
@@ -165,7 +165,7 @@ public class InitialData implements java.io.Serializable {
 		this.bdfEmail = bdfEmail;
 		this.reasonRequest = reasonRequest;
 		this.products = products;
-		this.tokenUW = tokenUW;
+		this.rolIds = rolIds;
 	}
 
 }
