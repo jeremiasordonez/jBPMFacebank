@@ -45,6 +45,11 @@
       <version>1.4.15</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.drools</groupId>
+      <artifactId>drools-persistence-jpa</artifactId>
+      <version>${jbpm.version}</version>
+    </dependency>
   </dependencies>
   <build>
     <plugins>
