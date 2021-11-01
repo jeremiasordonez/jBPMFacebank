@@ -45,7 +45,6 @@ public class PersonalData implements java.io.Serializable {
 
 	private java.lang.String passportEmissionDate;
 
-	@javax.persistence.Column(unique = true)
 	private java.lang.Integer taskId;
 
 	public PersonalData() {
