@@ -16,7 +16,7 @@
             <property name="hibernate.id.new_generator_mappings" value="false"/>
             <property name="hibernate.transaction.jta.platform" value="org.hibernate.service.jta.platform.internal.JBossAppServerJtaPlatform"/>
             <property name="hibernate.format_sql" value="true"/>
-            <property name="use_sql_comments" value="true"/>
+            <property name="hibernate.use_sql_comments" value="true"/>
         </properties>
     </persistence-unit>
 </persistence>
