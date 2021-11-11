@@ -8,24 +8,11 @@ public class ValidClientData implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@javax.persistence.GeneratedValue(generator = "VALIDCLIENTDATA_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
-	@javax.persistence.Id
-	@javax.persistence.SequenceGenerator(sequenceName = "VALIDCLIENTDATA_ID_SEQ", name = "VALIDCLIENTDATA_ID_GENERATOR")
-	private java.lang.Long id;
-
 	private java.lang.String variableName;
 
 	private java.lang.Boolean valid;
 
 	public ValidClientData() {
-	}
-
-	public java.lang.Long getId() {
-		return this.id;
-	}
-
-	public void setId(java.lang.Long id) {
-		this.id = id;
 	}
 
 	public java.lang.String getVariableName() {
@@ -44,9 +31,8 @@ public class ValidClientData implements java.io.Serializable {
 		this.valid = valid;
 	}
 
-	public ValidClientData(java.lang.Long id, java.lang.String variableName,
+	public ValidClientData(java.lang.String variableName,
 			java.lang.Boolean valid) {
-		this.id = id;
 		this.variableName = variableName;
 		this.valid = valid;
 	}
