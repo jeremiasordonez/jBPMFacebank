@@ -40,6 +40,10 @@ public class InitialData implements java.io.Serializable {
 	@javax.persistence.ElementCollection(fetch = javax.persistence.FetchType.EAGER)
 	private java.util.List<java.lang.Integer> rolIds;
 
+	private java.lang.String languageClient;
+
+	private java.lang.String languageBDF;
+
 	public InitialData() {
 	}
 
@@ -147,13 +151,30 @@ public class InitialData implements java.io.Serializable {
 		this.rolIds = rolIds;
 	}
 
+	public java.lang.String getLanguageClient() {
+		return this.languageClient;
+	}
+
+	public void setLanguageClient(java.lang.String languageClient) {
+		this.languageClient = languageClient;
+	}
+
+	public java.lang.String getLanguageBDF() {
+		return this.languageBDF;
+	}
+
+	public void setLanguageBDF(java.lang.String languageBDF) {
+		this.languageBDF = languageBDF;
+	}
+
 	public InitialData(java.lang.Long id, java.lang.String login,
 			java.lang.String email, java.lang.String completeNames,
 			java.lang.String firstSurname, java.lang.String secondSurname,
 			java.lang.String currentUser, java.lang.String bdfName,
 			java.lang.String bdfLoginName, java.lang.String bdfEmail,
 			java.lang.String reasonRequest, java.lang.String products,
-			java.util.List<java.lang.Integer> rolIds) {
+			java.util.List<java.lang.Integer> rolIds,
+			java.lang.String languageClient, java.lang.String languageBDF) {
 		this.id = id;
 		this.login = login;
 		this.email = email;
@@ -167,6 +188,8 @@ public class InitialData implements java.io.Serializable {
 		this.reasonRequest = reasonRequest;
 		this.products = products;
 		this.rolIds = rolIds;
+		this.languageClient = languageClient;
+		this.languageBDF = languageBDF;
 	}
 
 }
