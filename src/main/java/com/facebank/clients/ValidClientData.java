@@ -7,29 +7,49 @@ package com.facebank.clients;
 @javax.persistence.Entity
 public class ValidClientData implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    @javax.persistence.GeneratedValue(generator = "VALIDCLIENTDATA_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
-    @javax.persistence.Id
-    @javax.persistence.SequenceGenerator(sequenceName = "VALIDCLIENTDATA_ID_SEQ", name = "VALIDCLIENTDATA_ID_GENERATOR")
-    private java.lang.Long id;
+	@javax.persistence.GeneratedValue(generator = "VALIDCLIENTDATA_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
+	@javax.persistence.Id
+	@javax.persistence.SequenceGenerator(sequenceName = "VALIDCLIENTDATA_ID_SEQ", name = "VALIDCLIENTDATA_ID_GENERATOR")
+	private java.lang.Long id;
 
-    public ValidClientData() {
-    }
-    
-    public ValidClientData(java.lang.Long id) {
-        this.id = id;
-    }
+	private java.lang.String variableName;
 
-    public java.lang.Long getId() {
-        return this.id;
-    }
-    
-    public void setId(java.lang.Long id) {
-        this.id = id;
-    }
+	private java.lang.Boolean valid;
 
+	public ValidClientData() {
+	}
 
+	public java.lang.Long getId() {
+		return this.id;
+	}
 
+	public void setId(java.lang.Long id) {
+		this.id = id;
+	}
+
+	public java.lang.String getVariableName() {
+		return this.variableName;
+	}
+
+	public void setVariableName(java.lang.String variableName) {
+		this.variableName = variableName;
+	}
+
+	public java.lang.Boolean getValid() {
+		return this.valid;
+	}
+
+	public void setValid(java.lang.Boolean valid) {
+		this.valid = valid;
+	}
+
+	public ValidClientData(java.lang.Long id, java.lang.String variableName,
+			java.lang.Boolean valid) {
+		this.id = id;
+		this.variableName = variableName;
+		this.valid = valid;
+	}
 
 }
