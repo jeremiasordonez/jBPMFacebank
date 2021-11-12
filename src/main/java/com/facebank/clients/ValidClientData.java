@@ -12,6 +12,8 @@ public class ValidClientData implements java.io.Serializable {
 
 	private java.lang.Boolean valid;
 
+	private java.lang.String showName;
+
 	public ValidClientData() {
 	}
 
@@ -31,10 +33,19 @@ public class ValidClientData implements java.io.Serializable {
 		this.valid = valid;
 	}
 
+	public java.lang.String getShowName() {
+		return this.showName;
+	}
+
+	public void setShowName(java.lang.String showName) {
+		this.showName = showName;
+	}
+
 	public ValidClientData(java.lang.String variableName,
-			java.lang.Boolean valid) {
+			java.lang.Boolean valid, java.lang.String showName) {
 		this.variableName = variableName;
 		this.valid = valid;
+		this.showName = showName;
 	}
 
 }
