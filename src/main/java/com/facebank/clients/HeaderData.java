@@ -16,8 +16,6 @@ public class HeaderData implements java.io.Serializable {
 
 	private java.lang.String bdf;
 
-	private java.time.LocalDateTime created;
-
 	private java.lang.String clientName;
 
 	private java.lang.String status;
@@ -41,14 +39,6 @@ public class HeaderData implements java.io.Serializable {
 		this.bdf = bdf;
 	}
 
-	public java.time.LocalDateTime getCreated() {
-		return this.created;
-	}
-
-	public void setCreated(java.time.LocalDateTime created) {
-		this.created = created;
-	}
-
 	public java.lang.String getClientName() {
 		return this.clientName;
 	}
@@ -66,11 +56,9 @@ public class HeaderData implements java.io.Serializable {
 	}
 
 	public HeaderData(java.lang.Long id, java.lang.String bdf,
-			java.time.LocalDateTime created, java.lang.String clientName,
-			java.lang.String status) {
+			java.lang.String clientName, java.lang.String status) {
 		this.id = id;
 		this.bdf = bdf;
-		this.created = created;
 		this.clientName = clientName;
 		this.status = status;
 	}
