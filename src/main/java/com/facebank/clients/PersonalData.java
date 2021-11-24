@@ -45,8 +45,6 @@ public class PersonalData implements java.io.Serializable {
 
 	private java.lang.String passportEmissionDate;
 
-	private java.lang.Integer taskId;
-
 	public PersonalData() {
 	}
 
@@ -172,14 +170,6 @@ public class PersonalData implements java.io.Serializable {
 		this.passportEmissionDate = passportEmissionDate;
 	}
 
-	public java.lang.Integer getTaskId() {
-		return this.taskId;
-	}
-
-	public void setTaskId(java.lang.Integer taskId) {
-		this.taskId = taskId;
-	}
-
 	public PersonalData(java.lang.Long id, java.lang.String surname,
 			java.lang.String secondSurname, java.lang.String gender,
 			java.lang.String birthDate, java.lang.String birthPlace,
@@ -188,7 +178,7 @@ public class PersonalData implements java.io.Serializable {
 			java.lang.String completeNames, java.lang.String documentType,
 			java.lang.String documentEmissionDate,
 			java.lang.String documentExpirationDate,
-			java.lang.String passportEmissionDate, java.lang.Integer taskId) {
+			java.lang.String passportEmissionDate) {
 		this.id = id;
 		this.surname = surname;
 		this.secondSurname = secondSurname;
@@ -204,7 +194,6 @@ public class PersonalData implements java.io.Serializable {
 		this.documentEmissionDate = documentEmissionDate;
 		this.documentExpirationDate = documentExpirationDate;
 		this.passportEmissionDate = passportEmissionDate;
-		this.taskId = taskId;
 	}
 
 }
