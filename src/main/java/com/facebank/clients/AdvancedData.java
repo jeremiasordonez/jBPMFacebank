@@ -39,6 +39,10 @@ public class AdvancedData implements java.io.Serializable {
 
 	private java.lang.String position;
 
+	private java.lang.Boolean governmentRelationship;
+
+	private java.lang.Boolean politicallyExposed;
+
 	public AdvancedData() {
 	}
 
@@ -147,6 +151,23 @@ public class AdvancedData implements java.io.Serializable {
 		this.position = position;
 	}
 
+	public java.lang.Boolean getGovernmentRelationship() {
+		return this.governmentRelationship;
+	}
+
+	public void setGovernmentRelationship(
+			java.lang.Boolean governmentRelationship) {
+		this.governmentRelationship = governmentRelationship;
+	}
+
+	public java.lang.Boolean getPoliticallyExposed() {
+		return this.politicallyExposed;
+	}
+
+	public void setPoliticallyExposed(java.lang.Boolean politicallyExposed) {
+		this.politicallyExposed = politicallyExposed;
+	}
+
 	public AdvancedData(java.lang.Long id, java.lang.String bvUser,
 			java.lang.String mail, java.lang.String secretQuestion,
 			java.lang.String secretAnswer, java.lang.String profession,
@@ -155,7 +176,9 @@ public class AdvancedData implements java.io.Serializable {
 			java.lang.String futureDepositsSource,
 			java.lang.String workingCondition,
 			java.lang.String companyWhereClientWorks,
-			java.lang.String activity, java.lang.String position) {
+			java.lang.String activity, java.lang.String position,
+			java.lang.Boolean governmentRelationship,
+			java.lang.Boolean politicallyExposed) {
 		this.id = id;
 		this.bvUser = bvUser;
 		this.mail = mail;
@@ -169,6 +192,8 @@ public class AdvancedData implements java.io.Serializable {
 		this.companyWhereClientWorks = companyWhereClientWorks;
 		this.activity = activity;
 		this.position = position;
+		this.governmentRelationship = governmentRelationship;
+		this.politicallyExposed = politicallyExposed;
 	}
 
 }
