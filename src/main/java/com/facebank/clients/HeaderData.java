@@ -18,8 +18,6 @@ public class HeaderData implements java.io.Serializable {
 
 	private java.lang.String clientName;
 
-	private java.lang.String status;
-
 	public HeaderData() {
 	}
 
@@ -47,20 +45,11 @@ public class HeaderData implements java.io.Serializable {
 		this.clientName = clientName;
 	}
 
-	public java.lang.String getStatus() {
-		return this.status;
-	}
-
-	public void setStatus(java.lang.String status) {
-		this.status = status;
-	}
-
 	public HeaderData(java.lang.Long id, java.lang.String bdf,
-			java.lang.String clientName, java.lang.String status) {
+			java.lang.String clientName) {
 		this.id = id;
 		this.bdf = bdf;
 		this.clientName = clientName;
-		this.status = status;
 	}
 
 }
