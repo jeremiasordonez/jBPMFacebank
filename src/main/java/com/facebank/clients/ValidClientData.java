@@ -10,7 +10,7 @@ public class ValidClientData implements java.io.Serializable {
 
 	private java.lang.String variableName;
 
-	private java.lang.String showNamesa;
+	private java.lang.String showName;
 
 	public ValidClientData() {
 	}
@@ -23,18 +23,18 @@ public class ValidClientData implements java.io.Serializable {
 		this.variableName = variableName;
 	}
 
-	public java.lang.String getShowNamesa() {
-		return this.showNamesa;
+	public java.lang.String getShowName() {
+		return this.showName;
 	}
 
-	public void setShowNamesa(java.lang.String showNamesa) {
-		this.showNamesa = showNamesa;
+	public void setShowName(java.lang.String showName) {
+		this.showName = showName;
 	}
 
 	public ValidClientData(java.lang.String variableName,
-			java.lang.String showNamesa) {
+			java.lang.String showName) {
 		this.variableName = variableName;
-		this.showNamesa = showNamesa;
+		this.showName = showName;
 	}
 
 }
