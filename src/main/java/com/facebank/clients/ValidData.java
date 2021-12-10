@@ -6,12 +6,33 @@ package com.facebank.clients;
 
 public class ValidData implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public ValidData() {
-    }
+	private java.lang.String showName;
+	private java.lang.String variableName;
 
+	public ValidData() {
+	}
 
+	public java.lang.String getShowName() {
+		return this.showName;
+	}
 
+	public void setShowName(java.lang.String showName) {
+		this.showName = showName;
+	}
+
+	public java.lang.String getVariableName() {
+		return this.variableName;
+	}
+
+	public void setVariableName(java.lang.String variableName) {
+		this.variableName = variableName;
+	}
+
+	public ValidData(java.lang.String showName, java.lang.String variableName) {
+		this.showName = showName;
+		this.variableName = variableName;
+	}
 
 }
