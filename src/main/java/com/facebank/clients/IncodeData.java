@@ -16,9 +16,9 @@ public class IncodeData implements java.io.Serializable {
 
 	private java.lang.String address;
 
-	private java.lang.String birthDate;
+	private Integer birthDate;
 
-	private java.lang.Integer birthPlace;
+	private String birthPlace;
 
 	private java.lang.String classes;
 
@@ -32,7 +32,7 @@ public class IncodeData implements java.io.Serializable {
 
 	private java.lang.String documentNumberCheckDigit;
 
-	private java.lang.String expirationDate;
+	private Integer expirationDate;
 
 	private java.lang.String expirationDateCheckDigit;
 
@@ -42,7 +42,7 @@ public class IncodeData implements java.io.Serializable {
 
 	private java.lang.String gender;
 
-	private java.lang.String issueDate;
+	private Integer issueDate;
 
 	private java.lang.String issuedAt;
 
@@ -59,6 +59,9 @@ public class IncodeData implements java.io.Serializable {
 	private java.lang.String personalNumber;
 
 	private java.lang.String typeOfId;
+
+	@javax.persistence.ManyToOne(cascade = {javax.persistence.CascadeType.ALL}, fetch = javax.persistence.FetchType.EAGER)
+	private com.facebank.clients.NameData name;
 
 	public IncodeData() {
 	}
@@ -77,22 +80,6 @@ public class IncodeData implements java.io.Serializable {
 
 	public void setAddress(java.lang.String address) {
 		this.address = address;
-	}
-
-	public java.lang.String getBirthDate() {
-		return this.birthDate;
-	}
-
-	public void setBirthDate(java.lang.String birthDate) {
-		this.birthDate = birthDate;
-	}
-
-	public java.lang.Integer getBirthPlace() {
-		return this.birthPlace;
-	}
-
-	public void setBirthPlace(java.lang.Integer birthPlace) {
-		this.birthPlace = birthPlace;
 	}
 
 	public java.lang.String getClasses() {
@@ -144,14 +131,6 @@ public class IncodeData implements java.io.Serializable {
 		this.documentNumberCheckDigit = documentNumberCheckDigit;
 	}
 
-	public java.lang.String getExpirationDate() {
-		return this.expirationDate;
-	}
-
-	public void setExpirationDate(java.lang.String expirationDate) {
-		this.expirationDate = expirationDate;
-	}
-
 	public java.lang.String getExpirationDateCheckDigit() {
 		return this.expirationDateCheckDigit;
 	}
@@ -183,14 +162,6 @@ public class IncodeData implements java.io.Serializable {
 
 	public void setGender(java.lang.String gender) {
 		this.gender = gender;
-	}
-
-	public java.lang.String getIssueDate() {
-		return this.issueDate;
-	}
-
-	public void setIssueDate(java.lang.String issueDate) {
-		this.issueDate = issueDate;
 	}
 
 	public java.lang.String getIssuedAt() {
@@ -257,21 +228,62 @@ public class IncodeData implements java.io.Serializable {
 		this.typeOfId = typeOfId;
 	}
 
+	public com.facebank.clients.NameData getName() {
+		return this.name;
+	}
+
+	public void setName(com.facebank.clients.NameData name) {
+		this.name = name;
+	}
+
+	public java.lang.Integer getBirthDate() {
+		return this.birthDate;
+	}
+
+	public void setBirthDate(java.lang.Integer birthDate) {
+		this.birthDate = birthDate;
+	}
+
+	public java.lang.String getBirthPlace() {
+		return this.birthPlace;
+	}
+
+	public void setBirthPlace(java.lang.String birthPlace) {
+		this.birthPlace = birthPlace;
+	}
+
+	public java.lang.Integer getExpirationDate() {
+		return this.expirationDate;
+	}
+
+	public void setExpirationDate(java.lang.Integer expirationDate) {
+		this.expirationDate = expirationDate;
+	}
+
+	public java.lang.Integer getIssueDate() {
+		return this.issueDate;
+	}
+
+	public void setIssueDate(java.lang.Integer issueDate) {
+		this.issueDate = issueDate;
+	}
+
 	public IncodeData(java.lang.Long id, java.lang.String address,
-			java.lang.String birthDate, java.lang.Integer birthPlace,
+			java.lang.Integer birthDate, java.lang.String birthPlace,
 			java.lang.String classes, java.lang.String dateOfBirthCheckDigit,
 			java.lang.String documentBackSubtype,
 			java.lang.String documentFrontSubtype,
 			java.lang.String documentNumber,
 			java.lang.String documentNumberCheckDigit,
-			java.lang.String expirationDate,
+			java.lang.Integer expirationDate,
 			java.lang.String expirationDateCheckDigit,
 			java.lang.String expireAt, java.lang.String fullNameMrz,
-			java.lang.String gender, java.lang.String issueDate,
+			java.lang.String gender, java.lang.Integer issueDate,
 			java.lang.String issuedAt, java.lang.String issuingCountry,
 			java.lang.String mrz1, java.lang.String mrz2,
 			java.lang.String mrz3, java.lang.String nationality,
-			java.lang.String personalNumber, java.lang.String typeOfId) {
+			java.lang.String personalNumber, java.lang.String typeOfId,
+			com.facebank.clients.NameData name) {
 		this.id = id;
 		this.address = address;
 		this.birthDate = birthDate;
@@ -296,6 +308,7 @@ public class IncodeData implements java.io.Serializable {
 		this.nationality = nationality;
 		this.personalNumber = personalNumber;
 		this.typeOfId = typeOfId;
+		this.name = name;
 	}
 
 }
