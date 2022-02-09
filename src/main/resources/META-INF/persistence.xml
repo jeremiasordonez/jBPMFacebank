@@ -9,6 +9,7 @@
         <class>com.facebank.clients.AdvancedData</class>
         <class>com.facebank.clients.HeaderData</class>
         <class>com.facebank.clients.incodeData</class>
+        <class>com.facebank.clients.NameData</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
             <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
