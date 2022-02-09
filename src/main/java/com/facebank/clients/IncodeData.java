@@ -14,6 +14,52 @@ public class IncodeData implements java.io.Serializable {
 	@javax.persistence.SequenceGenerator(sequenceName = "INCODEDATA_ID_SEQ", name = "INCODEDATA_ID_GENERATOR")
 	private java.lang.Long id;
 
+	private java.lang.String address;
+
+	private java.lang.String birthDate;
+
+	private java.lang.Integer birthPlace;
+
+	private java.lang.String classes;
+
+	private java.lang.String dateOfBirthCheckDigit;
+
+	private java.lang.String documentBackSubtype;
+
+	private java.lang.String documentFrontSubtype;
+
+	private java.lang.String documentNumber;
+
+	private java.lang.String documentNumberCheckDigit;
+
+	private java.lang.String expirationDate;
+
+	private java.lang.String expirationDateCheckDigit;
+
+	private java.lang.String expireAt;
+
+	private java.lang.String fullNameMrz;
+
+	private java.lang.String gender;
+
+	private java.lang.String issueDate;
+
+	private java.lang.String issuedAt;
+
+	private java.lang.String issuingCountry;
+
+	private java.lang.String mrz1;
+
+	private java.lang.String mrz2;
+
+	private java.lang.String mrz3;
+
+	private java.lang.String nationality;
+
+	private java.lang.String personalNumber;
+
+	private java.lang.String typeOfId;
+
 	public IncodeData() {
 	}
 
@@ -25,8 +71,231 @@ public class IncodeData implements java.io.Serializable {
 		this.id = id;
 	}
 
-	public IncodeData(java.lang.Long id) {
+	public java.lang.String getAddress() {
+		return this.address;
+	}
+
+	public void setAddress(java.lang.String address) {
+		this.address = address;
+	}
+
+	public java.lang.String getBirthDate() {
+		return this.birthDate;
+	}
+
+	public void setBirthDate(java.lang.String birthDate) {
+		this.birthDate = birthDate;
+	}
+
+	public java.lang.Integer getBirthPlace() {
+		return this.birthPlace;
+	}
+
+	public void setBirthPlace(java.lang.Integer birthPlace) {
+		this.birthPlace = birthPlace;
+	}
+
+	public java.lang.String getClasses() {
+		return this.classes;
+	}
+
+	public void setClasses(java.lang.String classes) {
+		this.classes = classes;
+	}
+
+	public java.lang.String getDateOfBirthCheckDigit() {
+		return this.dateOfBirthCheckDigit;
+	}
+
+	public void setDateOfBirthCheckDigit(java.lang.String dateOfBirthCheckDigit) {
+		this.dateOfBirthCheckDigit = dateOfBirthCheckDigit;
+	}
+
+	public java.lang.String getDocumentBackSubtype() {
+		return this.documentBackSubtype;
+	}
+
+	public void setDocumentBackSubtype(java.lang.String documentBackSubtype) {
+		this.documentBackSubtype = documentBackSubtype;
+	}
+
+	public java.lang.String getDocumentFrontSubtype() {
+		return this.documentFrontSubtype;
+	}
+
+	public void setDocumentFrontSubtype(java.lang.String documentFrontSubtype) {
+		this.documentFrontSubtype = documentFrontSubtype;
+	}
+
+	public java.lang.String getDocumentNumber() {
+		return this.documentNumber;
+	}
+
+	public void setDocumentNumber(java.lang.String documentNumber) {
+		this.documentNumber = documentNumber;
+	}
+
+	public java.lang.String getDocumentNumberCheckDigit() {
+		return this.documentNumberCheckDigit;
+	}
+
+	public void setDocumentNumberCheckDigit(
+			java.lang.String documentNumberCheckDigit) {
+		this.documentNumberCheckDigit = documentNumberCheckDigit;
+	}
+
+	public java.lang.String getExpirationDate() {
+		return this.expirationDate;
+	}
+
+	public void setExpirationDate(java.lang.String expirationDate) {
+		this.expirationDate = expirationDate;
+	}
+
+	public java.lang.String getExpirationDateCheckDigit() {
+		return this.expirationDateCheckDigit;
+	}
+
+	public void setExpirationDateCheckDigit(
+			java.lang.String expirationDateCheckDigit) {
+		this.expirationDateCheckDigit = expirationDateCheckDigit;
+	}
+
+	public java.lang.String getExpireAt() {
+		return this.expireAt;
+	}
+
+	public void setExpireAt(java.lang.String expireAt) {
+		this.expireAt = expireAt;
+	}
+
+	public java.lang.String getFullNameMrz() {
+		return this.fullNameMrz;
+	}
+
+	public void setFullNameMrz(java.lang.String fullNameMrz) {
+		this.fullNameMrz = fullNameMrz;
+	}
+
+	public java.lang.String getGender() {
+		return this.gender;
+	}
+
+	public void setGender(java.lang.String gender) {
+		this.gender = gender;
+	}
+
+	public java.lang.String getIssueDate() {
+		return this.issueDate;
+	}
+
+	public void setIssueDate(java.lang.String issueDate) {
+		this.issueDate = issueDate;
+	}
+
+	public java.lang.String getIssuedAt() {
+		return this.issuedAt;
+	}
+
+	public void setIssuedAt(java.lang.String issuedAt) {
+		this.issuedAt = issuedAt;
+	}
+
+	public java.lang.String getIssuingCountry() {
+		return this.issuingCountry;
+	}
+
+	public void setIssuingCountry(java.lang.String issuingCountry) {
+		this.issuingCountry = issuingCountry;
+	}
+
+	public java.lang.String getMrz1() {
+		return this.mrz1;
+	}
+
+	public void setMrz1(java.lang.String mrz1) {
+		this.mrz1 = mrz1;
+	}
+
+	public java.lang.String getMrz2() {
+		return this.mrz2;
+	}
+
+	public void setMrz2(java.lang.String mrz2) {
+		this.mrz2 = mrz2;
+	}
+
+	public java.lang.String getMrz3() {
+		return this.mrz3;
+	}
+
+	public void setMrz3(java.lang.String mrz3) {
+		this.mrz3 = mrz3;
+	}
+
+	public java.lang.String getNationality() {
+		return this.nationality;
+	}
+
+	public void setNationality(java.lang.String nationality) {
+		this.nationality = nationality;
+	}
+
+	public java.lang.String getPersonalNumber() {
+		return this.personalNumber;
+	}
+
+	public void setPersonalNumber(java.lang.String personalNumber) {
+		this.personalNumber = personalNumber;
+	}
+
+	public java.lang.String getTypeOfId() {
+		return this.typeOfId;
+	}
+
+	public void setTypeOfId(java.lang.String typeOfId) {
+		this.typeOfId = typeOfId;
+	}
+
+	public IncodeData(java.lang.Long id, java.lang.String address,
+			java.lang.String birthDate, java.lang.Integer birthPlace,
+			java.lang.String classes, java.lang.String dateOfBirthCheckDigit,
+			java.lang.String documentBackSubtype,
+			java.lang.String documentFrontSubtype,
+			java.lang.String documentNumber,
+			java.lang.String documentNumberCheckDigit,
+			java.lang.String expirationDate,
+			java.lang.String expirationDateCheckDigit,
+			java.lang.String expireAt, java.lang.String fullNameMrz,
+			java.lang.String gender, java.lang.String issueDate,
+			java.lang.String issuedAt, java.lang.String issuingCountry,
+			java.lang.String mrz1, java.lang.String mrz2,
+			java.lang.String mrz3, java.lang.String nationality,
+			java.lang.String personalNumber, java.lang.String typeOfId) {
 		this.id = id;
+		this.address = address;
+		this.birthDate = birthDate;
+		this.birthPlace = birthPlace;
+		this.classes = classes;
+		this.dateOfBirthCheckDigit = dateOfBirthCheckDigit;
+		this.documentBackSubtype = documentBackSubtype;
+		this.documentFrontSubtype = documentFrontSubtype;
+		this.documentNumber = documentNumber;
+		this.documentNumberCheckDigit = documentNumberCheckDigit;
+		this.expirationDate = expirationDate;
+		this.expirationDateCheckDigit = expirationDateCheckDigit;
+		this.expireAt = expireAt;
+		this.fullNameMrz = fullNameMrz;
+		this.gender = gender;
+		this.issueDate = issueDate;
+		this.issuedAt = issuedAt;
+		this.issuingCountry = issuingCountry;
+		this.mrz1 = mrz1;
+		this.mrz2 = mrz2;
+		this.mrz3 = mrz3;
+		this.nationality = nationality;
+		this.personalNumber = personalNumber;
+		this.typeOfId = typeOfId;
 	}
 
 }
