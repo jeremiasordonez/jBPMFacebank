@@ -28,7 +28,9 @@
 
             ],
             "results" : [
-                                "Result" : new StringDataType()
+                                "Result" : new StringDataType(),
+                                "Status" : new StringDataType(),
+                                "StatusMsg" : new StringDataType()
 
             ],
             "mavenDependencies" : [
