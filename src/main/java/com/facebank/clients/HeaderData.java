@@ -18,6 +18,8 @@ public class HeaderData implements java.io.Serializable {
 
 	private java.lang.String clientName;
 
+	private java.lang.String bdfLogin;
+
 	public HeaderData() {
 	}
 
@@ -45,11 +47,20 @@ public class HeaderData implements java.io.Serializable {
 		this.clientName = clientName;
 	}
 
+	public java.lang.String getBdfLogin() {
+		return this.bdfLogin;
+	}
+
+	public void setBdfLogin(java.lang.String bdfLogin) {
+		this.bdfLogin = bdfLogin;
+	}
+
 	public HeaderData(java.lang.Long id, java.lang.String bdf,
-			java.lang.String clientName) {
+			java.lang.String clientName, java.lang.String bdfLogin) {
 		this.id = id;
 		this.bdf = bdf;
 		this.clientName = clientName;
+		this.bdfLogin = bdfLogin;
 	}
 
 }
