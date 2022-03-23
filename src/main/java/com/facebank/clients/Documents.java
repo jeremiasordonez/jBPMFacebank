@@ -8,7 +8,174 @@ public class Documents implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
+	private java.lang.String credentialFrontId;
+	private java.lang.String credentialBackId;
+	private java.lang.String optionalId;
+	private java.lang.String optionalsFolder;
+	private java.lang.String rootFolder;
+	private java.lang.String identificationFolder;
+	private java.lang.String serviceReceiptFolder;
+	private java.lang.String credentialBackMiniatureId;
+	private java.lang.String credentialFrontMiniatureId;
+	private java.lang.String optionalMiniatureId;
+	private java.lang.String cliId;
+	private java.lang.String cliFolder;
+	private java.lang.String cliMiniatureId;
+	private java.lang.String serviceReceiptId;
+	private java.lang.String serviceReceiptMiniatureId;
+
 	public Documents() {
+	}
+
+	public java.lang.String getCredentialFrontId() {
+		return this.credentialFrontId;
+	}
+
+	public void setCredentialFrontId(java.lang.String credentialFrontId) {
+		this.credentialFrontId = credentialFrontId;
+	}
+
+	public java.lang.String getCredentialBackId() {
+		return this.credentialBackId;
+	}
+
+	public void setCredentialBackId(java.lang.String credentialBackId) {
+		this.credentialBackId = credentialBackId;
+	}
+
+	public java.lang.String getOptionalId() {
+		return this.optionalId;
+	}
+
+	public void setOptionalId(java.lang.String optionalId) {
+		this.optionalId = optionalId;
+	}
+
+	public java.lang.String getOptionalsFolder() {
+		return this.optionalsFolder;
+	}
+
+	public void setOptionalsFolder(java.lang.String optionalsFolder) {
+		this.optionalsFolder = optionalsFolder;
+	}
+
+	public java.lang.String getRootFolder() {
+		return this.rootFolder;
+	}
+
+	public void setRootFolder(java.lang.String rootFolder) {
+		this.rootFolder = rootFolder;
+	}
+
+	public java.lang.String getIdentificationFolder() {
+		return this.identificationFolder;
+	}
+
+	public void setIdentificationFolder(java.lang.String identificationFolder) {
+		this.identificationFolder = identificationFolder;
+	}
+
+	public java.lang.String getServiceReceiptFolder() {
+		return this.serviceReceiptFolder;
+	}
+
+	public void setServiceReceiptFolder(java.lang.String serviceReceiptFolder) {
+		this.serviceReceiptFolder = serviceReceiptFolder;
+	}
+
+	public java.lang.String getCredentialBackMiniatureId() {
+		return this.credentialBackMiniatureId;
+	}
+
+	public void setCredentialBackMiniatureId(
+			java.lang.String credentialBackMiniatureId) {
+		this.credentialBackMiniatureId = credentialBackMiniatureId;
+	}
+
+	public java.lang.String getCredentialFrontMiniatureId() {
+		return this.credentialFrontMiniatureId;
+	}
+
+	public void setCredentialFrontMiniatureId(
+			java.lang.String credentialFrontMiniatureId) {
+		this.credentialFrontMiniatureId = credentialFrontMiniatureId;
+	}
+
+	public java.lang.String getOptionalMiniatureId() {
+		return this.optionalMiniatureId;
+	}
+
+	public void setOptionalMiniatureId(java.lang.String optionalMiniatureId) {
+		this.optionalMiniatureId = optionalMiniatureId;
+	}
+
+	public java.lang.String getCliId() {
+		return this.cliId;
+	}
+
+	public void setCliId(java.lang.String cliId) {
+		this.cliId = cliId;
+	}
+
+	public java.lang.String getCliFolder() {
+		return this.cliFolder;
+	}
+
+	public void setCliFolder(java.lang.String cliFolder) {
+		this.cliFolder = cliFolder;
+	}
+
+	public java.lang.String getCliMiniatureId() {
+		return this.cliMiniatureId;
+	}
+
+	public void setCliMiniatureId(java.lang.String cliMiniatureId) {
+		this.cliMiniatureId = cliMiniatureId;
+	}
+
+	public java.lang.String getServiceReceiptId() {
+		return this.serviceReceiptId;
+	}
+
+	public void setServiceReceiptId(java.lang.String serviceReceiptId) {
+		this.serviceReceiptId = serviceReceiptId;
+	}
+
+	public java.lang.String getServiceReceiptMiniatureId() {
+		return this.serviceReceiptMiniatureId;
+	}
+
+	public void setServiceReceiptMiniatureId(
+			java.lang.String serviceReceiptMiniatureId) {
+		this.serviceReceiptMiniatureId = serviceReceiptMiniatureId;
+	}
+
+	public Documents(java.lang.String credentialFrontId,
+			java.lang.String credentialBackId, java.lang.String optionalId,
+			java.lang.String optionalsFolder, java.lang.String rootFolder,
+			java.lang.String identificationFolder,
+			java.lang.String serviceReceiptFolder,
+			java.lang.String credentialBackMiniatureId,
+			java.lang.String credentialFrontMiniatureId,
+			java.lang.String optionalMiniatureId, java.lang.String cliId,
+			java.lang.String cliFolder, java.lang.String cliMiniatureId,
+			java.lang.String serviceReceiptId,
+			java.lang.String serviceReceiptMiniatureId) {
+		this.credentialFrontId = credentialFrontId;
+		this.credentialBackId = credentialBackId;
+		this.optionalId = optionalId;
+		this.optionalsFolder = optionalsFolder;
+		this.rootFolder = rootFolder;
+		this.identificationFolder = identificationFolder;
+		this.serviceReceiptFolder = serviceReceiptFolder;
+		this.credentialBackMiniatureId = credentialBackMiniatureId;
+		this.credentialFrontMiniatureId = credentialFrontMiniatureId;
+		this.optionalMiniatureId = optionalMiniatureId;
+		this.cliId = cliId;
+		this.cliFolder = cliFolder;
+		this.cliMiniatureId = cliMiniatureId;
+		this.serviceReceiptId = serviceReceiptId;
+		this.serviceReceiptMiniatureId = serviceReceiptMiniatureId;
 	}
 
 }
