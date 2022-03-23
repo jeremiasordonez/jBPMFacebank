@@ -6,12 +6,9 @@ package com.facebank.clients;
 
 public class Documents implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Documents() {
-    }
-
-
-
+	public Documents() {
+	}
 
 }
