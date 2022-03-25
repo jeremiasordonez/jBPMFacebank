@@ -43,6 +43,10 @@ public class AddressData implements java.io.Serializable {
 
 	private java.lang.String workPhoneNumber;
 
+	private java.lang.String postalCodeDescription;
+
+	private java.lang.String workPostalCodeDescription;
+
 	public AddressData() {
 	}
 
@@ -166,6 +170,23 @@ public class AddressData implements java.io.Serializable {
 		this.workPhoneNumber = workPhoneNumber;
 	}
 
+	public java.lang.String getPostalCodeDescription() {
+		return this.postalCodeDescription;
+	}
+
+	public void setPostalCodeDescription(java.lang.String postalCodeDescription) {
+		this.postalCodeDescription = postalCodeDescription;
+	}
+
+	public java.lang.String getWorkPostalCodeDescription() {
+		return this.workPostalCodeDescription;
+	}
+
+	public void setWorkPostalCodeDescription(
+			java.lang.String workPostalCodeDescription) {
+		this.workPostalCodeDescription = workPostalCodeDescription;
+	}
+
 	public AddressData(java.lang.Long id, java.lang.String addressType,
 			java.lang.String address, java.lang.Integer country,
 			java.lang.Integer province, java.lang.Integer city,
@@ -173,7 +194,9 @@ public class AddressData implements java.io.Serializable {
 			java.lang.Integer workCountry, java.lang.Integer workProvince,
 			java.lang.Integer workCity, java.lang.Integer workPostalCode,
 			java.lang.String workAddressType, java.lang.String workAddress,
-			java.lang.String workPhoneNumber) {
+			java.lang.String workPhoneNumber,
+			java.lang.String postalCodeDescription,
+			java.lang.String workPostalCodeDescription) {
 		this.id = id;
 		this.addressType = addressType;
 		this.address = address;
@@ -189,6 +212,8 @@ public class AddressData implements java.io.Serializable {
 		this.workAddressType = workAddressType;
 		this.workAddress = workAddress;
 		this.workPhoneNumber = workPhoneNumber;
+		this.postalCodeDescription = postalCodeDescription;
+		this.workPostalCodeDescription = workPostalCodeDescription;
 	}
 
 }
