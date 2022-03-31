@@ -16,7 +16,7 @@ public class IncodeData implements java.io.Serializable {
 
 	private java.lang.String address;
 
-	private Integer birthDate;
+	private String birthDate;
 
 	private String birthPlace;
 
@@ -60,7 +60,7 @@ public class IncodeData implements java.io.Serializable {
 
 	private java.lang.String typeOfId;
 
-	@javax.persistence.ManyToOne(cascade = {javax.persistence.CascadeType.ALL}, fetch = javax.persistence.FetchType.EAGER)
+	@javax.persistence.ManyToOne(fetch = javax.persistence.FetchType.EAGER, cascade = {javax.persistence.CascadeType.ALL})
 	private com.facebank.clients.NameData name;
 
 	public IncodeData() {
@@ -236,14 +236,6 @@ public class IncodeData implements java.io.Serializable {
 		this.name = name;
 	}
 
-	public java.lang.Integer getBirthDate() {
-		return this.birthDate;
-	}
-
-	public void setBirthDate(java.lang.Integer birthDate) {
-		this.birthDate = birthDate;
-	}
-
 	public java.lang.String getBirthPlace() {
 		return this.birthPlace;
 	}
@@ -268,8 +260,16 @@ public class IncodeData implements java.io.Serializable {
 		this.issueDate = issueDate;
 	}
 
+	public java.lang.String getBirthDate() {
+		return this.birthDate;
+	}
+
+	public void setBirthDate(java.lang.String birthDate) {
+		this.birthDate = birthDate;
+	}
+
 	public IncodeData(java.lang.Long id, java.lang.String address,
-			java.lang.Integer birthDate, java.lang.String birthPlace,
+			java.lang.String birthDate, java.lang.String birthPlace,
 			java.lang.String classes, java.lang.String dateOfBirthCheckDigit,
 			java.lang.String documentBackSubtype,
 			java.lang.String documentFrontSubtype,
